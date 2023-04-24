@@ -113,7 +113,7 @@ a {
 
 .nav a:hover,
 .nav li.active a {
-    font-weight: 600;
+    /* font-weight: 600; */
     text-shadow: 1px 0 0 currentColor;
     color: #171100;
 }
@@ -166,6 +166,7 @@ a {
     height: 685px;
     object-fit: cover;
     border-radius: 20px;
+    border: 10px ridge #b3fda7;
 }
 
 .hero .hero-sumary {
@@ -353,7 +354,7 @@ a {
 .course-item {
     flex: 1;
     background: #FFFFFF;
-    border: 2px solid #E2DFDA;
+    border: 1px solid #E2DFDA;
     border-radius: 12px;
 }
 
@@ -368,6 +369,11 @@ a {
     height: 278px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
+    opacity: 0.5;
+}
+
+.course-item .thumb:hover {
+    opacity: 1;
 }
 
 .course-item .info {
@@ -528,6 +534,7 @@ a {
     height: 404px;
     object-fit: cover;
     border-radius: 16px;
+    border: 10px ridge var(--primary);
 }
 
 .feature .images .img1 {
@@ -610,14 +617,19 @@ a {
     background: #FFFFFF;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
+    border: 1px ridge var(--primary);
 }
 
 .blog-list .blog-item .thumb {
     width: 100%;
-    margin: -1px;
     height: 250px;
     object-fit: cover;
     border-radius: 16px 16px 0px 0px;
+    opacity: 0.5;
+}
+
+.blog-list .blog-item .thumb:hover {
+    opacity: 1;
 }
 
 .blog-item .info {
@@ -673,7 +685,8 @@ a {
 }
 
 .blog-item:hover {
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0, 1);
+    border: none;
 }
 
 .blog .dots {
